@@ -30,6 +30,7 @@ class MyHTMLParser(HTMLParser):
                         cleanURL = urlTA + cleanAttr
 
                         # Fetch'em.
+                        print("GET: ", cleanURL)
                         urllib.request.urlretrieve(cleanURL, localFile + match.group(0))
 
 
